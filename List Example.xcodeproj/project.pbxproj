@@ -12,6 +12,7 @@
 		670BE2052493DF900090FBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670BE2032493DF900090FBE2 /* Main.storyboard */; };
 		670BE2072493DF940090FBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670BE2062493DF940090FBE2 /* Assets.xcassets */; };
 		670BE20A2493DF940090FBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670BE2082493DF940090FBE2 /* LaunchScreen.storyboard */; };
+		670BE2132493EA7C0090FBE2 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		670BE2062493DF940090FBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		670BE2092493DF940090FBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		670BE20B2493DF940090FBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		670BE1FC2493DF900090FBE2 /* List Example */ = {
 			isa = PBXGroup;
 			children = (
+				670BE2112493EA600090FBE2 /* Cells */,
 				670BE1FD2493DF900090FBE2 /* AppDelegate.swift */,
 				670BE2012493DF900090FBE2 /* ViewController.swift */,
 				670BE2032493DF900090FBE2 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				670BE20B2493DF940090FBE2 /* Info.plist */,
 			);
 			path = "List Example";
+			sourceTree = "<group>";
+		};
+		670BE2112493EA600090FBE2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				670BE2022493DF900090FBE2 /* ViewController.swift in Sources */,
 				670BE1FE2493DF900090FBE2 /* AppDelegate.swift in Sources */,
+				670BE2132493EA7C0090FBE2 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
