@@ -29,24 +29,37 @@ class ViewController: UIViewController {
     }
 
     func addNewCell(at indexPath: IndexPath) {
-        
+        texts.insert("sub Tasks", at: indexPath.row + 1)
+        tableView.insertRows(at: [IndexPath(row: indexPath.row + 1, section: indexPath.section)], with: .top)
+    }
+
+    func addNewCells(at indexPath: IndexPath) {
+        texts.insert(contentsOf: ["sub Tasks 1", "sub Tasks 2", "sub Tasks 3" ], at: indexPath.row + 1)
+        tableView.insertRows(at:
+            [
+                IndexPath(row: indexPath.row + 1, section: indexPath.section),
+                IndexPath(row: indexPath.row + 2, section: indexPath.section),
+                IndexPath(row: indexPath.row + 3, section: indexPath.section)
+            ],
+            with: .top)
     }
 }
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        DispatchQueue.main.async {
-            switch indexPath.row {
-            case 0:
-                self.goToColorable(color: .green)
-            case 1:
-                self.goToColorable(color: .red)
-            case 2:
-                self.goToColorable(color: .blue)
-            default:
-                break
-            }
-        }
+        addNewCells(at: indexPath)
+//        DispatchQueue.main.async {
+//            switch indexPath.row {
+//            case 0:
+//                self.goToColorable(color: .green)
+//            case 1:
+//                self.goToColorable(color: .red)
+//            case 2:
+//                self.goToColorable(color: .blue)
+//            default:
+//                break
+//            }
+//        }
     }
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -62,7 +75,7 @@ extension ViewController: UITableViewDelegate {
                 self.editCell(at: path)
             },
             UITableViewRowAction(style: .normal, title: "red") { action, path in
-                print(path)
+                self.addNewCell(at: indexPath)
             }
         ]
     }
