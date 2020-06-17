@@ -48,6 +48,7 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         addNewCells(at: indexPath)
+        tableView.isEditing = true
 //        DispatchQueue.main.async {
 //            switch indexPath.row {
 //            case 0:
@@ -61,7 +62,16 @@ extension ViewController: UITableViewDelegate {
 //            }
 //        }
     }
-
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let text = texts.remove(at: sourceIndexPath.row)
+        texts.insert(text, at: destinationIndexPath.row)
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
     }
