@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
 
+    func goToText(text: String) {
+        let vc = TextViewController()
+        vc.initialText = text
+        vc.delegate = self
+        self.present(vc, animated: true, completion: nil)
+    }
+
     func deleteRow(at indexPath: IndexPath) {
         texts.remove(at: indexPath.row)
         self.tableView.deleteRows(at: [indexPath], with: .fade)
@@ -47,8 +54,8 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        addNewCells(at: indexPath)
-        tableView.isEditing = true
+//        addNewCells(at: indexPath)
+        goToText(text: texts[indexPath.row])
 //        DispatchQueue.main.async {
 //            switch indexPath.row {
 //            case 0:
@@ -120,5 +127,15 @@ extension ViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         "Footer \(section)"
+    }
+}
+
+extension ViewController: TextViewControllerDelegate {
+    func textViewController(didChange text: String) {
+        let alert = UIAlertController(title: "User Change Text", message: text, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
+        
     }
 }

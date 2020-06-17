@@ -15,6 +15,8 @@
 		670BE2132493EA7C0090FBE2 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */; };
 		670BE21A249A738F0090FBE2 /* ColorableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE218249A738F0090FBE2 /* ColorableController.swift */; };
 		670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BE219249A738F0090FBE2 /* ColorableController.xib */; };
+		670BE220249A84750090FBE2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE21E249A84750090FBE2 /* TextViewController.swift */; };
+		670BE221249A84750090FBE2 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BE21F249A84750090FBE2 /* TextViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		670BE218249A738F0090FBE2 /* ColorableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorableController.swift; sourceTree = "<group>"; };
 		670BE219249A738F0090FBE2 /* ColorableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorableController.xib; sourceTree = "<group>"; };
+		670BE21E249A84750090FBE2 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		670BE21F249A84750090FBE2 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		670BE1FC2493DF900090FBE2 /* List Example */ = {
 			isa = PBXGroup;
 			children = (
+				670BE21D249A845F0090FBE2 /* Text Entry */,
 				670BE21C249A739A0090FBE2 /* Colorable */,
 				670BE2112493EA600090FBE2 /* Cells */,
 				670BE1FD2493DF900090FBE2 /* AppDelegate.swift */,
@@ -87,6 +92,15 @@
 				670BE219249A738F0090FBE2 /* ColorableController.xib */,
 			);
 			path = Colorable;
+			sourceTree = "<group>";
+		};
+		670BE21D249A845F0090FBE2 /* Text Entry */ = {
+			isa = PBXGroup;
+			children = (
+				670BE21E249A84750090FBE2 /* TextViewController.swift */,
+				670BE21F249A84750090FBE2 /* TextViewController.xib */,
+			);
+			path = "Text Entry";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				670BE20A2493DF940090FBE2 /* LaunchScreen.storyboard in Resources */,
+				670BE221249A84750090FBE2 /* TextViewController.xib in Resources */,
 				670BE2072493DF940090FBE2 /* Assets.xcassets in Resources */,
 				670BE2052493DF900090FBE2 /* Main.storyboard in Resources */,
 				670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */,
@@ -161,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670BE220249A84750090FBE2 /* TextViewController.swift in Sources */,
 				670BE2022493DF900090FBE2 /* ViewController.swift in Sources */,
 				670BE1FE2493DF900090FBE2 /* AppDelegate.swift in Sources */,
 				670BE2132493EA7C0090FBE2 /* MyTableViewCell.swift in Sources */,
