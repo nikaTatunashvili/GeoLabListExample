@@ -13,6 +13,8 @@
 		670BE2072493DF940090FBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670BE2062493DF940090FBE2 /* Assets.xcassets */; };
 		670BE20A2493DF940090FBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670BE2082493DF940090FBE2 /* LaunchScreen.storyboard */; };
 		670BE2132493EA7C0090FBE2 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */; };
+		670BE21A249A738F0090FBE2 /* ColorableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE218249A738F0090FBE2 /* ColorableController.swift */; };
+		670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BE219249A738F0090FBE2 /* ColorableController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		670BE2092493DF940090FBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		670BE20B2493DF940090FBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		670BE218249A738F0090FBE2 /* ColorableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorableController.swift; sourceTree = "<group>"; };
+		670BE219249A738F0090FBE2 /* ColorableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorableController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		670BE1FC2493DF900090FBE2 /* List Example */ = {
 			isa = PBXGroup;
 			children = (
+				670BE21C249A739A0090FBE2 /* Colorable */,
 				670BE2112493EA600090FBE2 /* Cells */,
 				670BE1FD2493DF900090FBE2 /* AppDelegate.swift */,
 				670BE2012493DF900090FBE2 /* ViewController.swift */,
@@ -73,6 +78,15 @@
 				670BE2122493EA7C0090FBE2 /* MyTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		670BE21C249A739A0090FBE2 /* Colorable */ = {
+			isa = PBXGroup;
+			children = (
+				670BE218249A738F0090FBE2 /* ColorableController.swift */,
+				670BE219249A738F0090FBE2 /* ColorableController.xib */,
+			);
+			path = Colorable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,7 @@
 				670BE20A2493DF940090FBE2 /* LaunchScreen.storyboard in Resources */,
 				670BE2072493DF940090FBE2 /* Assets.xcassets in Resources */,
 				670BE2052493DF900090FBE2 /* Main.storyboard in Resources */,
+				670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +164,7 @@
 				670BE2022493DF900090FBE2 /* ViewController.swift in Sources */,
 				670BE1FE2493DF900090FBE2 /* AppDelegate.swift in Sources */,
 				670BE2132493EA7C0090FBE2 /* MyTableViewCell.swift in Sources */,
+				670BE21A249A738F0090FBE2 /* ColorableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
