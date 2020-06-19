@@ -17,6 +17,15 @@
 		670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BE219249A738F0090FBE2 /* ColorableController.xib */; };
 		670BE220249A84750090FBE2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE21E249A84750090FBE2 /* TextViewController.swift */; };
 		670BE221249A84750090FBE2 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BE21F249A84750090FBE2 /* TextViewController.xib */; };
+		675F7136249D15000031CA6F /* FAQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7135249D15000031CA6F /* FAQTableViewController.swift */; };
+		675F713A249D153E0031CA6F /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7138249D153E0031CA6F /* QuestionCell.swift */; };
+		675F713B249D153E0031CA6F /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675F7139249D153E0031CA6F /* QuestionCell.xib */; };
+		675F713E249D154F0031CA6F /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F713C249D154F0031CA6F /* AnswerCell.swift */; };
+		675F713F249D154F0031CA6F /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675F713D249D154F0031CA6F /* AnswerCell.xib */; };
+		675F7141249D16AF0031CA6F /* AppCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7140249D16AF0031CA6F /* AppCellRepresentable.swift */; };
+		675F7144249D18440031CA6F /* QuestionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7143249D18440031CA6F /* QuestionEntity.swift */; };
+		675F7146249D18D10031CA6F /* AppGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7145249D18D10031CA6F /* AppGenerator.swift */; };
+		675F7149249D23BD0031CA6F /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7148249D23BD0031CA6F /* Bool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +41,15 @@
 		670BE219249A738F0090FBE2 /* ColorableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorableController.xib; sourceTree = "<group>"; };
 		670BE21E249A84750090FBE2 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		670BE21F249A84750090FBE2 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		675F7135249D15000031CA6F /* FAQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewController.swift; sourceTree = "<group>"; };
+		675F7138249D153E0031CA6F /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		675F7139249D153E0031CA6F /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		675F713C249D154F0031CA6F /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		675F713D249D154F0031CA6F /* AnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		675F7140249D16AF0031CA6F /* AppCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellRepresentable.swift; sourceTree = "<group>"; };
+		675F7143249D18440031CA6F /* QuestionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionEntity.swift; sourceTree = "<group>"; };
+		675F7145249D18D10031CA6F /* AppGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGenerator.swift; sourceTree = "<group>"; };
+		675F7148249D23BD0031CA6F /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,7 @@
 		670BE1FC2493DF900090FBE2 /* List Example */ = {
 			isa = PBXGroup;
 			children = (
+				675F7134249D14350031CA6F /* FAQ */,
 				670BE21D249A845F0090FBE2 /* Text Entry */,
 				670BE21C249A739A0090FBE2 /* Colorable */,
 				670BE2112493EA600090FBE2 /* Cells */,
@@ -101,6 +120,46 @@
 				670BE21F249A84750090FBE2 /* TextViewController.xib */,
 			);
 			path = "Text Entry";
+			sourceTree = "<group>";
+		};
+		675F7134249D14350031CA6F /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				675F7142249D18260031CA6F /* Models */,
+				675F7137249D15240031CA6F /* Cells */,
+				675F7135249D15000031CA6F /* FAQTableViewController.swift */,
+			);
+			path = FAQ;
+			sourceTree = "<group>";
+		};
+		675F7137249D15240031CA6F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				675F7138249D153E0031CA6F /* QuestionCell.swift */,
+				675F7139249D153E0031CA6F /* QuestionCell.xib */,
+				675F713C249D154F0031CA6F /* AnswerCell.swift */,
+				675F713D249D154F0031CA6F /* AnswerCell.xib */,
+				675F7140249D16AF0031CA6F /* AppCellRepresentable.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		675F7142249D18260031CA6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				675F7147249D23B00031CA6F /* Extensions */,
+				675F7143249D18440031CA6F /* QuestionEntity.swift */,
+				675F7145249D18D10031CA6F /* AppGenerator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		675F7147249D23B00031CA6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				675F7148249D23BD0031CA6F /* Bool.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				670BE20A2493DF940090FBE2 /* LaunchScreen.storyboard in Resources */,
+				675F713B249D153E0031CA6F /* QuestionCell.xib in Resources */,
 				670BE221249A84750090FBE2 /* TextViewController.xib in Resources */,
+				675F713F249D154F0031CA6F /* AnswerCell.xib in Resources */,
 				670BE2072493DF940090FBE2 /* Assets.xcassets in Resources */,
 				670BE2052493DF900090FBE2 /* Main.storyboard in Resources */,
 				670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */,
@@ -176,10 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675F7141249D16AF0031CA6F /* AppCellRepresentable.swift in Sources */,
 				670BE220249A84750090FBE2 /* TextViewController.swift in Sources */,
 				670BE2022493DF900090FBE2 /* ViewController.swift in Sources */,
+				675F7146249D18D10031CA6F /* AppGenerator.swift in Sources */,
 				670BE1FE2493DF900090FBE2 /* AppDelegate.swift in Sources */,
+				675F7149249D23BD0031CA6F /* Bool.swift in Sources */,
+				675F713E249D154F0031CA6F /* AnswerCell.swift in Sources */,
+				675F713A249D153E0031CA6F /* QuestionCell.swift in Sources */,
 				670BE2132493EA7C0090FBE2 /* MyTableViewCell.swift in Sources */,
+				675F7136249D15000031CA6F /* FAQTableViewController.swift in Sources */,
+				675F7144249D18440031CA6F /* QuestionEntity.swift in Sources */,
 				670BE21A249A738F0090FBE2 /* ColorableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

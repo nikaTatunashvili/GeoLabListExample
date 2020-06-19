@@ -3,9 +3,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
-
-    var texts = ["Green controller", "Red controller", "Blue Controller"]
     
+    var texts = ["Green controller", "Red controller", "Blue Controller"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
@@ -19,10 +19,14 @@ class ViewController: UIViewController {
     }
 
     func goToText(text: String) {
-        let vc = TextViewController()
-        vc.initialText = text
-        vc.delegate = self
-        self.present(vc, animated: true, completion: nil)
+        let vc = FAQTableViewController()
+        vc.source = AppGenerator.makeQuestions()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+//        let vc = TextViewController()
+//        vc.initialText = text
+//        vc.delegate = self
+//        self.present(vc, animated: true, completion: nil)
     }
 
     func deleteRow(at indexPath: IndexPath) {
