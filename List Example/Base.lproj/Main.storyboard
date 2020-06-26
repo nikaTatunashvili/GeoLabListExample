@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E95-uv-v5Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AQc-kx-3tL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -94,10 +94,72 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="O5j-ER-8Bf">
+            <objects>
+                <viewController id="AQc-kx-3tL" customClass="MenuViewController" customModule="List_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zkm-LZ-FFu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PZZ-u2-oTU">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-tA-PLF">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="194.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Table View">
+                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tableViewAction" destination="AQc-kx-3tL" eventType="touchUpInside" id="AkP-uH-qVN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpz-Xc-tjS">
+                                        <rect key="frame" x="0.0" y="194.5" width="374" height="194.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Tab Bar">
+                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tabBarAction" destination="AQc-kx-3tL" eventType="touchUpInside" id="C3H-IP-Q50"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeR-BC-YeZ">
+                                        <rect key="frame" x="0.0" y="389" width="374" height="194.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Collection">
+                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz3-4B-n8A">
+                                        <rect key="frame" x="0.0" y="583.5" width="374" height="194.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Will Be ...">
+                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PZZ-u2-oTU" firstAttribute="top" secondItem="gQA-pL-10f" secondAttribute="top" constant="20" id="4Og-fk-RO5"/>
+                            <constraint firstItem="PZZ-u2-oTU" firstAttribute="leading" secondItem="gQA-pL-10f" secondAttribute="leading" constant="20" id="ESL-8H-yIM"/>
+                            <constraint firstItem="gQA-pL-10f" firstAttribute="bottom" secondItem="PZZ-u2-oTU" secondAttribute="bottom" constant="20" id="Huv-OL-fA9"/>
+                            <constraint firstItem="gQA-pL-10f" firstAttribute="trailing" secondItem="PZZ-u2-oTU" secondAttribute="trailing" constant="20" id="krp-5k-ngZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gQA-pL-10f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeJ-QX-2Jz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-974" y="162"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zA8-sf-nBd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E95-uv-v5Y" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ViewController" automaticallyAdjustsScrollViewInsets="NO" id="E95-uv-v5Y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sm4-GM-s5f">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
