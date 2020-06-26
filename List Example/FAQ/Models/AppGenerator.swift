@@ -14,9 +14,7 @@ struct AppGenerator {
     }
     
     static func rendomText(max: Int) -> String {
-        
         let source = UUID().uuidString
-        print("\n", source, "\n", UIDevice.current.identifierForVendor?.uuidString)
         return (0...max).compactMap({ _ in
             source.randomElement()
         }).map(String.init)

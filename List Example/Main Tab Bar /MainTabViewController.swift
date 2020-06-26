@@ -13,7 +13,6 @@ class MainTabViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        self.delegate = self
         self.viewControllers = generateViewControllers()
         
     }
@@ -22,7 +21,8 @@ class MainTabViewController: UITabBarController {
         let tasks = TasksTableViewController()
         tasks.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         
-        
+        let recents = RecentTasksTableViewController()
+        recents.tabBarItem = tabBarItem(1)
         
         let three = UIViewController()
         three.view.backgroundColor = UIColor(white: .random(in: 0...1), alpha: 1.0)
@@ -31,7 +31,7 @@ class MainTabViewController: UITabBarController {
         let four = UIViewController()
         four.view.backgroundColor = UIColor(white: .random(in: 0...1), alpha: 1.0)
         four.tabBarItem = tabBarItem(3)
-        return [tasks, three, four]
+        return [tasks.withNavigation, recents, three, four]
     }
     
     private func tabBarItem(_ index: Int) -> UITabBarItem {
@@ -42,5 +42,11 @@ class MainTabViewController: UITabBarController {
 extension MainTabViewController: UITabBarControllerDelegate {
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         print(#function)
+    }
+}
+
+extension UIViewController {
+    var withNavigation: UIViewController {
+        UINavigationController(rootViewController: self)
     }
 }

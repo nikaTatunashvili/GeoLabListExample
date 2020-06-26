@@ -17,6 +17,9 @@
 		670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BE219249A738F0090FBE2 /* ColorableController.xib */; };
 		670BE220249A84750090FBE2 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670BE21E249A84750090FBE2 /* TextViewController.swift */; };
 		670BE221249A84750090FBE2 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670BE21F249A84750090FBE2 /* TextViewController.xib */; };
+		673A577E24A668FD00A3AD1F /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673A577C24A668FD00A3AD1F /* TaskDetailViewController.swift */; };
+		673A577F24A668FD00A3AD1F /* TaskDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673A577D24A668FD00A3AD1F /* TaskDetailViewController.xib */; };
+		675B62AD24A66F6E00A45DEF /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B62AC24A66F6E00A45DEF /* LocalStorage.swift */; };
 		675F7136249D15000031CA6F /* FAQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7135249D15000031CA6F /* FAQTableViewController.swift */; };
 		675F713A249D153E0031CA6F /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7138249D153E0031CA6F /* QuestionCell.swift */; };
 		675F713B249D153E0031CA6F /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675F7139249D153E0031CA6F /* QuestionCell.xib */; };
@@ -47,6 +50,9 @@
 		670BE219249A738F0090FBE2 /* ColorableController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorableController.xib; sourceTree = "<group>"; };
 		670BE21E249A84750090FBE2 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		670BE21F249A84750090FBE2 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		673A577C24A668FD00A3AD1F /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		673A577D24A668FD00A3AD1F /* TaskDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskDetailViewController.xib; sourceTree = "<group>"; };
+		675B62AC24A66F6E00A45DEF /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		675F7135249D15000031CA6F /* FAQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewController.swift; sourceTree = "<group>"; };
 		675F7138249D153E0031CA6F /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
 		675F7139249D153E0031CA6F /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
@@ -136,6 +142,15 @@
 			path = "Text Entry";
 			sourceTree = "<group>";
 		};
+		673A578024A6690400A3AD1F /* Task Detail */ = {
+			isa = PBXGroup;
+			children = (
+				673A577C24A668FD00A3AD1F /* TaskDetailViewController.swift */,
+				673A577D24A668FD00A3AD1F /* TaskDetailViewController.xib */,
+			);
+			path = "Task Detail";
+			sourceTree = "<group>";
+		};
 		675F7134249D14350031CA6F /* FAQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +194,8 @@
 		67F7B4C224A65A350013896D /* Main Tab Bar  */ = {
 			isa = PBXGroup;
 			children = (
+				675B62AC24A66F6E00A45DEF /* LocalStorage.swift */,
+				673A578024A6690400A3AD1F /* Task Detail */,
 				67F7B4D124A665F60013896D /* Cell */,
 				67F7B4CC24A665AC0013896D /* Secont Tab */,
 				67F7B4C924A663800013896D /* Firs tab */,
@@ -272,6 +289,7 @@
 			files = (
 				670BE20A2493DF940090FBE2 /* LaunchScreen.storyboard in Resources */,
 				675F713B249D153E0031CA6F /* QuestionCell.xib in Resources */,
+				673A577F24A668FD00A3AD1F /* TaskDetailViewController.xib in Resources */,
 				670BE221249A84750090FBE2 /* TextViewController.xib in Resources */,
 				675F713F249D154F0031CA6F /* AnswerCell.xib in Resources */,
 				67F7B4D524A6660F0013896D /* TasksCell.xib in Resources */,
@@ -288,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673A577E24A668FD00A3AD1F /* TaskDetailViewController.swift in Sources */,
 				675F7141249D16AF0031CA6F /* AppCellRepresentable.swift in Sources */,
 				670BE220249A84750090FBE2 /* TextViewController.swift in Sources */,
 				670BE2022493DF900090FBE2 /* ViewController.swift in Sources */,
@@ -305,6 +324,7 @@
 				67F7B4CF24A665D60013896D /* RecentTasksTableViewController.swift in Sources */,
 				675F7144249D18440031CA6F /* QuestionEntity.swift in Sources */,
 				670BE21A249A738F0090FBE2 /* ColorableController.swift in Sources */,
+				675B62AD24A66F6E00A45DEF /* LocalStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
