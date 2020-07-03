@@ -1,6 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private let network = FetchCountries()
     
     @IBOutlet var tableView: UITableView!
     
@@ -11,7 +12,17 @@ class ViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        network.fetch { countries in
+            guard let items = countries else { return }
+            self.texts = items.compactMap({ $0.nativeName })
+            self.tableView.reloadData()
+        }
+    }
 
+    
     func goToColorable(color: UIColor) {
         let vc = ColorableController()
         vc.backgroundColor = color
