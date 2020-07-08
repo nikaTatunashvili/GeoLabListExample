@@ -13,6 +13,7 @@ class TextViewController: UIViewController {
     var delegate: TextViewControllerDelegate?
     var initialText: String = ""
     
+    @IBOutlet weak var animateView: UIView!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
@@ -22,9 +23,16 @@ class TextViewController: UIViewController {
     }
 
     @IBAction func save() {
-        self.dismiss(animated: true, completion: {
-            self.delegate?.textViewController(didChange: self.textView.text)
-        })
+//        self.dismiss(animated: true, completion: {
+//            self.delegate?.textViewController(didChange: self.textView.text)
+//        })
+        animateView.translatesAutoresizingMaskIntoConstraints = true
+        UIView.animate(withDuration: 0.5) {
+            self.animateView.frame.origin.x = 150
+            self.animateView.frame.origin.y = 300
+            self.animateView.frame.size.height = 190
+            self.animateView.frame.size.width = 30
+        }
     }
 }
 

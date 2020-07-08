@@ -30,14 +30,14 @@ class ViewController: UIViewController {
     }
 
     func goToText(text: String) {
-        let vc = FAQTableViewController()
-        vc.source = AppGenerator.makeQuestions()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = FAQTableViewController()
+//        vc.source = AppGenerator.makeQuestions()
+//        self.navigationController?.pushViewController(vc, animated: true)
         
-//        let vc = TextViewController()
-//        vc.initialText = text
-//        vc.delegate = self
-//        self.present(vc, animated: true, completion: nil)
+        let vc = TextViewController()
+        vc.initialText = text
+        vc.delegate = self
+        self.present(vc, animated: true, completion: nil)
     }
 
     func deleteRow(at indexPath: IndexPath) {

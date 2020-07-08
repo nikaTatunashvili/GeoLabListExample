@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextViewController" customModule="List_Example" customModuleProvider="target">
             <connections>
+                <outlet property="animateView" destination="XbL-3z-MZy" id="KpB-0u-h5t"/>
                 <outlet property="textView" destination="gyy-Mz-l4Y" id="6d0-Sl-Jjj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -38,15 +39,25 @@
                         <action selector="save" destination="-1" eventType="touchUpInside" id="7a3-HX-A5a"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbL-3z-MZy">
+                    <rect key="frame" x="167" y="408" width="80" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="4Gz-iO-prp"/>
+                        <constraint firstAttribute="height" constant="80" id="6zc-8W-toV"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="39E-GO-xxb" firstAttribute="top" secondItem="gyy-Mz-l4Y" secondAttribute="bottom" constant="45" id="Bps-Ze-1gJ"/>
                 <constraint firstItem="gyy-Mz-l4Y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ept-Wx-s7E"/>
+                <constraint firstItem="XbL-3z-MZy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YFH-YX-7Rx"/>
                 <constraint firstItem="39E-GO-xxb" firstAttribute="centerX" secondItem="gyy-Mz-l4Y" secondAttribute="centerX" id="eMl-Y0-txK"/>
                 <constraint firstItem="39E-GO-xxb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="i5a-sY-BfF"/>
                 <constraint firstItem="gyy-Mz-l4Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iyy-bP-RFH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gyy-Mz-l4Y" secondAttribute="trailing" id="mGs-HL-5JW"/>
+                <constraint firstItem="XbL-3z-MZy" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="znI-Qs-gdH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="151"/>

@@ -107,6 +107,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-tA-PLF">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="194.5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Table View">
                                             <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,6 +118,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpz-Xc-tjS">
                                         <rect key="frame" x="0.0" y="194.5" width="374" height="194.5"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Tab Bar">
                                             <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -127,6 +129,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeR-BC-YeZ">
                                         <rect key="frame" x="0.0" y="389" width="374" height="194.5"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Collection">
                                             <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,6 +137,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz3-4B-n8A">
                                         <rect key="frame" x="0.0" y="583.5" width="374" height="194.5"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Will Be ...">
                                             <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,8 +146,9 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PZZ-u2-oTU" firstAttribute="top" secondItem="gQA-pL-10f" secondAttribute="top" priority="750" constant="300" id="0fs-SV-mT1"/>
                             <constraint firstItem="PZZ-u2-oTU" firstAttribute="top" secondItem="gQA-pL-10f" secondAttribute="top" constant="20" id="4Og-fk-RO5"/>
                             <constraint firstItem="PZZ-u2-oTU" firstAttribute="leading" secondItem="gQA-pL-10f" secondAttribute="leading" constant="20" id="ESL-8H-yIM"/>
                             <constraint firstItem="gQA-pL-10f" firstAttribute="bottom" secondItem="PZZ-u2-oTU" secondAttribute="bottom" constant="20" id="Huv-OL-fA9"/>
@@ -151,6 +156,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gQA-pL-10f"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="yjF-tA-PLF" id="mgO-uf-aKz"/>
+                        <outlet property="button2" destination="kpz-Xc-tjS" id="w0M-oG-UJP"/>
+                        <outlet property="button3" destination="MeR-BC-YeZ" id="Y0v-cZ-gbC"/>
+                        <outlet property="button4" destination="Rz3-4B-n8A" id="ruw-8r-xnc"/>
+                        <outlet property="topConstraint" destination="4Og-fk-RO5" id="TjV-oH-9UA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OeJ-QX-2Jz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
