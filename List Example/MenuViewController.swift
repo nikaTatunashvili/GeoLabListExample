@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseUI
 
 class MenuViewController: UIViewController {
     
@@ -28,6 +29,10 @@ class MenuViewController: UIViewController {
         let vc = MainTabViewController()
         showWithModal(vc: vc)
         testAnimation()
+    }
+    
+    @IBAction func authAction() {
+        showWithModal(vc: RegisterViewController())
     }
     
     private func showWithModal(vc: UIViewController) {

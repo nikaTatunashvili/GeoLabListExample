@@ -134,6 +134,9 @@
                                         <state key="normal" title="Collection">
                                             <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="authAction" destination="AQc-kx-3tL" eventType="touchUpInside" id="3We-ky-s6f"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz3-4B-n8A">
                                         <rect key="frame" x="0.0" y="583.5" width="374" height="194.5"/>
