@@ -4,5 +4,4 @@ target 'List Example' do
   pod 'Alamofire'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
-  pod 'FirebaseUI'
 end
