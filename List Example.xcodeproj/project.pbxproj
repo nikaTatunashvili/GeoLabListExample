@@ -31,6 +31,7 @@
 		675F7149249D23BD0031CA6F /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F7148249D23BD0031CA6F /* Bool.swift */; };
 		67A023B624AF9DEE00623E90 /* FetchCountries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A023B524AF9DEE00623E90 /* FetchCountries.swift */; };
 		67A023B924AF9DFF00623E90 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A023B824AF9DFF00623E90 /* Country.swift */; };
+		67B55E9C24B8C5E00035E8A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B55E9B24B8C5E00035E8A5 /* GoogleService-Info.plist */; };
 		67F7B4C524A65A8D0013896D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F7B4C324A65A8D0013896D /* MainTabViewController.swift */; };
 		67F7B4C824A65B8E0013896D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F7B4C724A65B8E0013896D /* MenuViewController.swift */; };
 		67F7B4CB24A664B10013896D /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F7B4CA24A664B10013896D /* TasksTableViewController.swift */; };
@@ -70,6 +71,7 @@
 		675F7148249D23BD0031CA6F /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 		67A023B524AF9DEE00623E90 /* FetchCountries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountries.swift; sourceTree = "<group>"; };
 		67A023B824AF9DFF00623E90 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		67B55E9B24B8C5E00035E8A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67F7B4C324A65A8D0013896D /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		67F7B4C724A65B8E0013896D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		67F7B4CA24A664B10013896D /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				67F7B4C724A65B8E0013896D /* MenuViewController.swift */,
 				670BE2062493DF940090FBE2 /* Assets.xcassets */,
 				670BE2082493DF940090FBE2 /* LaunchScreen.storyboard */,
+				67B55E9B24B8C5E00035E8A5 /* GoogleService-Info.plist */,
 				670BE20B2493DF940090FBE2 /* Info.plist */,
 			);
 			path = "List Example";
@@ -342,6 +345,7 @@
 				675F713F249D154F0031CA6F /* AnswerCell.xib in Resources */,
 				67F7B4D524A6660F0013896D /* TasksCell.xib in Resources */,
 				670BE2072493DF940090FBE2 /* Assets.xcassets in Resources */,
+				67B55E9C24B8C5E00035E8A5 /* GoogleService-Info.plist in Resources */,
 				670BE2052493DF900090FBE2 /* Main.storyboard in Resources */,
 				670BE21B249A738F0090FBE2 /* ColorableController.xib in Resources */,
 			);
