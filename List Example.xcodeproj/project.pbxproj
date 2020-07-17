@@ -73,6 +73,7 @@
 		675F7148249D23BD0031CA6F /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bool.swift; sourceTree = "<group>"; };
 		67A023B524AF9DEE00623E90 /* FetchCountries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountries.swift; sourceTree = "<group>"; };
 		67A023B824AF9DFF00623E90 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		67A784CE24C2024B00114081 /* List Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "List Example.entitlements"; sourceTree = "<group>"; };
 		67B55E9B24B8C5E00035E8A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67B55E9E24B8D2640035E8A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		67B55E9F24B8D2640035E8A5 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		670BE1FC2493DF900090FBE2 /* List Example */ = {
 			isa = PBXGroup;
 			children = (
+				67A784CE24C2024B00114081 /* List Example.entitlements */,
 				67B55E9D24B8D2520035E8A5 /* Register */,
 				67A023B424AF9DDB00623E90 /* Network */,
 				67F7B4C224A65A350013896D /* Main Tab Bar  */,
@@ -581,7 +583,9 @@
 			baseConfigurationReference = 550F757D754F497AD332FCBC /* Pods-List Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "List Example/List Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F2CX349T9;
 				INFOPLIST_FILE = "List Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -600,7 +604,9 @@
 			baseConfigurationReference = 44895D5A52CEF6982B6CAB7B /* Pods-List Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "List Example/List Example.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F2CX349T9;
 				INFOPLIST_FILE = "List Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
