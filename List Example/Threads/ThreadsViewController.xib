@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreadsViewController" customModule="List_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="button1" destination="N21-Ns-wmt" id="8zc-hj-DDU"/>
+                <outlet property="button2" destination="IeA-pi-WVT" id="00S-5h-Uec"/>
+                <outlet property="imageView1" destination="hX6-93-uoT" id="sT9-In-9EZ"/>
+                <outlet property="imageView2" destination="VzN-If-K6E" id="HUo-ft-xo5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="f3Z-G7-lfv">
+                    <rect key="frame" x="20" y="762" width="374" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N21-Ns-wmt">
+                            <rect key="frame" x="0.0" y="0.0" width="183.5" height="60"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeA-pi-WVT">
+                            <rect key="frame" x="190.5" y="0.0" width="183.5" height="60"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="zhb-8K-Elt"/>
+                    </constraints>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hX6-93-uoT">
+                    <rect key="frame" x="12" y="44" width="390" height="343"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VzN-If-K6E">
+                    <rect key="frame" x="12" y="407" width="390" height="343"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="f3Z-G7-lfv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="BI1-Wd-HMt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="f3Z-G7-lfv" secondAttribute="bottom" constant="40" id="BiR-bq-4Cq"/>
+                <constraint firstItem="hX6-93-uoT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FKr-fx-3sk"/>
+                <constraint firstItem="VzN-If-K6E" firstAttribute="top" secondItem="hX6-93-uoT" secondAttribute="bottom" constant="20" id="HRD-AY-WVm"/>
+                <constraint firstItem="hX6-93-uoT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="IFJ-PK-hjp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VzN-If-K6E" secondAttribute="trailing" constant="12" id="JHb-gs-Jk6"/>
+                <constraint firstItem="VzN-If-K6E" firstAttribute="height" secondItem="hX6-93-uoT" secondAttribute="height" id="UR6-GF-ZHg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hX6-93-uoT" secondAttribute="trailing" constant="12" id="aRd-MI-NyP"/>
+                <constraint firstItem="VzN-If-K6E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="g4T-8N-xj5"/>
+                <constraint firstItem="f3Z-G7-lfv" firstAttribute="top" secondItem="VzN-If-K6E" secondAttribute="bottom" constant="12" id="r60-rz-7eN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f3Z-G7-lfv" secondAttribute="trailing" constant="20" id="ydW-zg-zVl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="130"/>
+        </view>
+    </objects>
+</document>

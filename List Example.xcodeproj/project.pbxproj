@@ -34,6 +34,8 @@
 		67B55E9C24B8C5E00035E8A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B55E9B24B8C5E00035E8A5 /* GoogleService-Info.plist */; };
 		67B55EA024B8D2640035E8A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B55E9E24B8D2640035E8A5 /* RegisterViewController.swift */; };
 		67B55EA124B8D2640035E8A5 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B55E9F24B8D2640035E8A5 /* RegisterViewController.xib */; };
+		67F35DF024CD5CA600927BC4 /* ThreadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F35DEE24CD5CA600927BC4 /* ThreadsViewController.swift */; };
+		67F35DF124CD5CA600927BC4 /* ThreadsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F35DEF24CD5CA600927BC4 /* ThreadsViewController.xib */; };
 		67F7B4C524A65A8D0013896D /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F7B4C324A65A8D0013896D /* MainTabViewController.swift */; };
 		67F7B4C824A65B8E0013896D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F7B4C724A65B8E0013896D /* MenuViewController.swift */; };
 		67F7B4CB24A664B10013896D /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F7B4CA24A664B10013896D /* TasksTableViewController.swift */; };
@@ -77,6 +79,8 @@
 		67B55E9B24B8C5E00035E8A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67B55E9E24B8D2640035E8A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		67B55E9F24B8D2640035E8A5 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		67F35DEE24CD5CA600927BC4 /* ThreadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsViewController.swift; sourceTree = "<group>"; };
+		67F35DEF24CD5CA600927BC4 /* ThreadsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadsViewController.xib; sourceTree = "<group>"; };
 		67F7B4C324A65A8D0013896D /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		67F7B4C724A65B8E0013896D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		67F7B4CA24A664B10013896D /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				67A784CE24C2024B00114081 /* List Example.entitlements */,
+				67F35DED24CD5BEC00927BC4 /* Threads */,
 				67B55E9D24B8D2520035E8A5 /* Register */,
 				67A023B424AF9DDB00623E90 /* Network */,
 				67F7B4C224A65A350013896D /* Main Tab Bar  */,
@@ -247,6 +252,15 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		67F35DED24CD5BEC00927BC4 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				67F35DEE24CD5CA600927BC4 /* ThreadsViewController.swift */,
+				67F35DEF24CD5CA600927BC4 /* ThreadsViewController.xib */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
 		67F7B4C224A65A350013896D /* Main Tab Bar  */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +372,7 @@
 				670BE20A2493DF940090FBE2 /* LaunchScreen.storyboard in Resources */,
 				675F713B249D153E0031CA6F /* QuestionCell.xib in Resources */,
 				673A577F24A668FD00A3AD1F /* TaskDetailViewController.xib in Resources */,
+				67F35DF124CD5CA600927BC4 /* ThreadsViewController.xib in Resources */,
 				670BE221249A84750090FBE2 /* TextViewController.xib in Resources */,
 				675F713F249D154F0031CA6F /* AnswerCell.xib in Resources */,
 				67F7B4D524A6660F0013896D /* TasksCell.xib in Resources */,
@@ -423,6 +438,7 @@
 				670BE220249A84750090FBE2 /* TextViewController.swift in Sources */,
 				670BE2022493DF900090FBE2 /* ViewController.swift in Sources */,
 				67F7B4C824A65B8E0013896D /* MenuViewController.swift in Sources */,
+				67F35DF024CD5CA600927BC4 /* ThreadsViewController.swift in Sources */,
 				675F7146249D18D10031CA6F /* AppGenerator.swift in Sources */,
 				670BE1FE2493DF900090FBE2 /* AppDelegate.swift in Sources */,
 				67A023B924AF9DFF00623E90 /* Country.swift in Sources */,

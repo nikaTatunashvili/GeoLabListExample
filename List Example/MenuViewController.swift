@@ -31,7 +31,8 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func authAction() {
-        showWithModal(vc: RegisterViewController())
+        showWithModal(vc: ThreadsViewController())
+//        showWithModal(vc: RegisterViewController())
     }
     
     private func showWithModal(vc: UIViewController) {
